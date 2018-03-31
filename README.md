@@ -1,48 +1,34 @@
-Icf Literature
+ICF Literature
 ================
 
-This application was generated with the [rails_apps_composer](https://github.com/RailsApps/rails_apps_composer) gem
-provided by the [RailsApps Project](http://railsapps.github.io/).
+This is a sample Ruby on Rails application generated for the Docker class at Frisco Masjid.
 
-Rails Composer is supported by developers who purchase our RailsApps tutorials.
+Local Setup (without docker)
+---------------------------
 
-Problems? Issues?
------------
+* First install the latest version of ruby > 2.4
 
-Need help? Ask on Stack Overflow with the tag 'railsapps.'
+* Install the rails gem `gem install rails`
 
-Your application contains diagnostics in the README file. Please provide a copy of the README file when reporting any issues.
+* Install the mysql database. See [mysql](https://dev.mysql.com/doc/refman/5.7/en/installing.html)
 
-If the application doesn't work as expected, please [report an issue](https://github.com/RailsApps/rails_apps_composer/issues)
-and include the diagnostics.
+* Set up your mysql username and password in `config/database.yml`
 
-Ruby on Rails
--------------
+* Clone this repository `git clone https://github.com/faraazkhan/icf-literature.git`
 
-This application requires:
+* Install all gems `cd icf-literature; bundle install`
 
-- Ruby 2.5.1
-- Rails 5.1.6
+* Create the database: `bundle exec rake db:create`
 
-Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.html).
+* Run all rails migrations: `bundle exec rake db:migrate`
 
-Getting Started
----------------
+* Start the server: `bundle exec rails s`
 
-Documentation and Support
--------------------------
+Goals
+-----
 
-Issues
--------------
+Your goal is to dockerize this application and run it as a three tier application one image each for:
 
-Similar Projects
-----------------
-
-Contributing
-------------
-
-Credits
--------
-
-License
--------
+* nginx
+* rails
+* mysql
