@@ -10,8 +10,6 @@ Local Setup (without docker)
 
 * Install a javascript runtime (nodejs, for example): `apt-get install nodejs`
 
-* Install the rails gem `gem install rails`
-
 * Install the mysql database. See [mysql](https://dev.mysql.com/doc/refman/5.7/en/installing.html)
 
 * Set up your mysql username and password in `config/database.yml`
