@@ -8,6 +8,8 @@ Local Setup (without docker)
 
 * First install the latest version of ruby > 2.4
 
+* Install a javascript runtime (nodejs, for example): `apt-get install nodejs`
+
 * Install the rails gem `gem install rails`
 
 * Install the mysql database. See [mysql](https://dev.mysql.com/doc/refman/5.7/en/installing.html)
